@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.main-header {
+  padding: 5px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  height: 10%;
+
+}
+
+.main-header__title {
+  font-size: 60px;
+  letter-spacing: -1.5px;
+}
+
+.main-header__title--blue {
+  color: var(--blue);
+}
+
+.main-header__title--orange {
+  color: var(--orange);
+}
+
+.main-header__menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-header__menu a {
+  padding: 10px 10px;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 22px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex: 1;
+}
+.search-form{
+  height: 20px;
+  display: flex;
+}
+
+.search-form input{
+  box-sizing:  inherit;
+  height: 1px;
+  padding: 15px;
+  flex: 1;
+  background-color: var(--light-gray);
+  color: var(--gray);
+  border: none;
+  transition: all .3s ease-in-out;
+  font-size: 15px;
+}
+
+.search-form input:focus {
+  background-color: var(--blue);
+  outline: none;
+  color: #fff;
+}
+
+.search-form button {
+  width: 40px;
+  height: 31px;
+  background-color: var(--blue);
+  border: none;
+  color: #fff;
+  font-size: 22px;
+}

@@ -1,0 +1,34 @@
+<section class="product__container">
+
+
+  <div class="product-image__container">
+    <img src="\assets\imagens\exemplo.jpg" alt="">
+  </div>
+  <div class="product-description__container"  *ngIf="livros$ ">
+    <h2 class="product__nomeL"> {{ livros$!.nome | uppercase }} </h2>
+
+    <p class="product__avaiability"> Verdadeiro clássico moderno, concebido por um dos mais influentes escritores do século XX, A revolução dos bichos é uma fábula sobre o poder. Narra a insurreição dos animais de uma granja contra seus donos. Progressivamente, porém, a revolução degenera numa tirania ainda mais opressiva que a dos humanos.</p>
+
+
+  </div>
+<div *ngIf="livros$">
+  <h2> Codigo Dewey </h2>
+  <div> {{ livros$.codigodewey }}</div>
+  <div>
+
+    <button mat-button routerLink="openDialog()">
+    <mat-icon class="material-symbols-outlined"
+       color="primary" >live_help</mat-icon>
+    </button>
+  </div>
+</div>
+</section>
+
+  <div class="product-description__container"  *ngIf="livros$ ">
+
+    <h2 class="product__name"> {{livros$!.autor}} </h2>
+
+    <p class="product__avaiability"> GEORGE ORWELL nasceu em Motihari, norte da Índia, em 1903. Filho de funcionário da administração britânica do comércio de ópio, estudou em colégios tradicionais na Inglaterra. Na década de 1920, foi agente da polícia colonial na Birmânia. Nas décadas seguintes, publicou romances, ensaios e textos jornalísticos. É considerado um dos autores mais importantes do século XX. Morreu em Londres, em 1950.</p>
+
+  </div>
+  <section class="product__container">

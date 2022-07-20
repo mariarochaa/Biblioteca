@@ -1,0 +1,12 @@
+[
+  { "id": "5", "isbn": "145", "nome": "A revolução", "autor":"George Orwell",
+  "categoria":"Romance", "descricao": "Um conto", "ano": "2018" },
+
+
+    { "id": "8", "isbn": "145", "nome": "A revolução dos bichos", "autor":"George Orwell",
+    "categoria":"Romance", "descricao": "Um conto", "ano": "2018" }
+
+
+
+]
+

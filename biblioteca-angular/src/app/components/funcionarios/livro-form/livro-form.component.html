@@ -1,0 +1,45 @@
+<mat-card>
+  <mat-toolbar color="primary">Adicionar Livros </mat-toolbar>
+  <mat-card-content>
+  <form [formGroup]="form">
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Nome" formControlName="nome">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Autor" formControlName="autor">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput placeholder="ISBN" formControlName="ISBN">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Categoria</mat-label>
+      <mat-select formControlName="categoria">
+        <mat-option value="000	GENERALIDADES">000 - GENERALIDADES</mat-option>
+        <mat-option value="100	FILOSOFIA E PSICOLOGIA">100	FILOSOFIA E PSICOLOGIA</mat-option>
+        <mat-option value="200	RELIGIÃO">200	RELIGIÃO</mat-option>
+        <mat-option value="300	CIÊNCIAS SOCIAIS">300	CIÊNCIAS SOCIAIS</mat-option>
+        <mat-option value="400	LÍNGUAS">400	LÍNGUAS</mat-option>
+        <mat-option value="500	CIÊNCIAS NATURAIS E MATEMÁTICAS">500	CIÊNCIAS NATURAIS E MATEMÁTICAS</mat-option>
+        <mat-option value="600	CIÊNCIAS APLICADAS">600	CIÊNCIAS APLICADAS</mat-option>
+        <mat-option value="700	ARTES">700	ARTES BRASILEIRA</mat-option>
+        <mat-option value="900	HISTÓRIA E GEOGRAFIA">900	HISTÓRIA E GEOGRAFIA</mat-option>
+        <mat-option value="">B869.1 - POESIA BRASILEIRA</mat-option>
+      </mat-select>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Descricao" formControlName="descricao">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Ano" formControlName="ano">
+      </mat-form-field>
+    </form>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Salvar</button>
+    <button mat-raised-button (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card-content>
+
+</mat-card>

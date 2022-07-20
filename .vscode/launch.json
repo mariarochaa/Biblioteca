@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch BibliotecaCrasApplication",
+            "request": "launch",
+            "mainClass": "com.bibliotecacras.bibliotecacras.BibliotecaCrasApplication",
+            "projectName": "biblioteca-cras"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BibliotecaSpringApplication<biblioteca-spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.biblioteca.bibliotecaspring.BibliotecaSpringApplication",
+            "projectName": "biblioteca-spring",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+
+.example-toolbar {
+  /* position: fixed; */
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+.container {
+  height: 80%;
+}
+
+.container2 {
+  height: 20%;
+}
+
+
+i {
+  padding-right: .6rem;
+}
+
+.side {
+  width: 10%;
+}
+
+mat-nav-list {
+  justify-content: last baseline;
+}
+
+.nav {
+  width: 30%;
+}
